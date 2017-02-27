@@ -47,7 +47,7 @@ _ARGS = _PARSER.parse_args()
 if _ARGS.ruta:
     _DIRECTORIO = str(_ARGS.ruta)
 else:
-    print('Introduzca directorio')
+    print('Introduzca directorio. Ej. C:\\temp\\aaa o /tmp/aaa')
     _DIRECTORIO = str(input())
 if os.path.isdir(_DIRECTORIO):
     tool_jerarquiza(_DIRECTORIO)
